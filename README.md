@@ -1,6 +1,6 @@
 # Steps to reproduce two-repos-in-one-folder issues.
 
-0. Rename `project/.git1` folder to `project/.git` because `git` is not able to add `.git` to staged changes.
+0. Rename `project/.git1` `project-dev/.git1` to `project/.git` and `project-dev/.git` because `git` is not able to add `.git` to staged changes.
 1. Open `project` folder in Code and open SCM view. You should see `1` file is untracked.
 2. Open file `2` from `project_dev` folder. On SCM sideview nothing is changed.
 3. Open `.git_dev/config file` and remove line with `worktree=../`. At the source control view
